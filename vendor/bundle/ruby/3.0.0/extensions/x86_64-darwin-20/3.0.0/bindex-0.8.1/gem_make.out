@@ -1,0 +1,15 @@
+current directory: /Users/arturdrzyzga/alpha-blog/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/arturdrzyzga/.rvm/rubies/ruby-3.0.1/bin/ruby -I /Users/arturdrzyzga/.rvm/rubies/ruby-3.0.1/lib/ruby/3.0.0 -r ./siteconf20210925-83679-6r6alc.rb extconf.rb
+creating Makefile
+
+current directory: /Users/arturdrzyzga/alpha-blog/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= clean
+
+current directory: /Users/arturdrzyzga/alpha-blog/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\=
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/arturdrzyzga/alpha-blog/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20210925-83679-7dspbr/skiptrace/internal
