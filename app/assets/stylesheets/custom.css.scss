@@ -1,0 +1,43 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+.navbar {
+  background-color: black !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+#logo {
+  color: white !important;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-size: 1.7em;
+}
+
+#home-container {
+  margin-top: 10px;
+}
+
+#withpicture {
+  background-image: asset-url('writing.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
