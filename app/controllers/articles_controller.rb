@@ -70,7 +70,7 @@ class ArticlesController < ApplicationController
       params.require(:article).permit(:title, :description)
     end
     def require_same_user
-      if current_user != @article.user
+      if current_user != @article.user && !current_user.admin?
         redirect_to @article, notice: "You can edit only your own article"
       end
     end
