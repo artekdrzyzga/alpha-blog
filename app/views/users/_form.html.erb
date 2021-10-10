@@ -1,37 +1,38 @@
-<div class="container ">
-   <%= form_with(model: @user, class: "shadow p-4 mb-2 bg-info rounded", local: true) do |f| %>
-    <div class="row justify-content-center">
-      <div class="col-10">
-        <%=render 'shared/errors', obj: @user %>
-        <div class="form-group row">
-          <%= f.label :username, class: "col-2 col-form-label" %>
-          <div class="col=10">
-            <%= f.text_field :username, class: "form-control shadow rounded" %>
+
+ <div class="container ">
+    <%= form_with(model: @user, class: "shadow p-4 mb-2 bg-info rounded", local: true) do |f| %>
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <%=render 'shared/errors', obj: @user %>
+          <div class="form-group row">
+            <%= f.label :username, class: "col-2 col-form-label" %>
+            <div class="col=10">
+              <%= f.text_field :username, class: "form-control shadow rounded" %>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <%= f.label :email, class: "col-2 col-form-label" %>
+            <div class="col=10">
+              <%= f.email_field :email, class: "form-control mb-3 shadow rounded" %>
+            </div> 
+          </div>
+          <div class="form-group row">
+            <%= f.label :password, class: "col-2 col-form-label" %>
+            <div class="col=10">
+              <%= f.password_field :password, class: "form-control mb-3 shadow rounded" %>
+            </div> 
+          </div>
+
+
+          <div class="form-group row">
+            <%= f.submit(@user.new_record? ? "SignUp" : "Update account", class: "btn btn-outline-light btn-lg") %>
           </div>
         </div>
+      </div>  
 
-        <div class="form-group row">
-          <%= f.label :email, class: "col-2 col-form-label" %>
-          <div class="col=10">
-            <%= f.email_field :email, class: "form-control mb-3 shadow rounded" %>
-          </div> 
-        </div>
-         <div class="form-group row">
-          <%= f.label :password, class: "col-2 col-form-label" %>
-          <div class="col=10">
-            <%= f.password_field :password, class: "form-control mb-3 shadow rounded" %>
-          </div> 
-        </div>
-
-
-        <div class="form-group row">
-          <%= f.submit(@user.new_record? ? "SignUp" : "Update account", class: "btn btn-outline-light btn-lg") %>
-        </div>
-      </div>
-    </div>  
-
-  <% end %>
-  <div class="mb-3">
-   <%#= link_to '[ Cancel and back to article list ]', articles_path %>
+    <% end %>
+    <div class="mb-3">
+    <%#= link_to '[ Cancel and back to article list ]', articles_path %>
+    </div>
   </div>
-</div>
